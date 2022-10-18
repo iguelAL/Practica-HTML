@@ -5,106 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedido</title>
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            font-family: sans-serif;
-        }
-
-        header {
-            height: 10vh;
-            padding: 0px 20px;
-            background-color: #c01c9f;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        a {
-            text-decoration: none;
-            font-size: 20px;
-        }
-
-        /* body */
-        section {
-            height: 90vh;
-            width: auto;
-            background-color: #a39f9f;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        form {
-            height: 80vh;
-            width: 1200px;
-            background-color: #fff;
-            border-radius: 20px;
-        }
-
-        .datosContacto {
-            height: 50px;
-            background-color: rgb(223, 152, 0);
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-        }
-
-        #nombre, #numero, #correo {
-            margin: 0 20px;
-        }
-
-        button {
-            width: 75px;
-            background-color: #00f;
-            color: #fff;
-        }
-
-        button:hover {
-            background-color: #fff;
-            color: #00f;
-        }
-
-        #vainilla {
-            height: 150px;
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: flex-start;
-            align-items: center;
-        }
-
-        #vainilla > p, label {
-            margin: 0px 15px;
-        }
-
-        #chocolate {
-            height: 150px;
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: flex-start;
-            align-items: center;
-        }
-
-        #chocolate > p, label {
-            margin: 0px 15px;
-        }
-
-        #fresa {
-            height: 150px;
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: flex-start;
-            align-items: center;
-        }
-
-        #fresa > p, label {
-            margin: 0px 15px;
-        }
-    </style>
 </head>
 <body>
 
@@ -116,82 +16,75 @@
 
     <section>
         <form action="">
-            <div class="datosContacto">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre">
-                <label for="numero">Numero de telefono:</label>
-                <input type="number" id="numero">
-                <label for="correo">Correo electronico:</label>
-                <input type="email" id="correo">
-                <button type="submit">Enviar</button>
-            </div>
+            
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre">
+            <label for="numero">Numero de telefono:</label>
+            <input type="number" id="numero">
+            <label for="correo">Correo electronico:</label>
+            <input type="email" id="correo">
+            <button type="submit">Enviar</button>
             <hr>
             <h2>Sabores:</h2>
             <!-- vainilla -->
-            <div id="vainilla">
-                <label for="pastel1">Vainilla:</label>
-                <input type="checkbox" class="pastel1">
-                <p>Puedes combinar sabores:</p>
-                <label for="vainillaSabor1">Fresa:</label>
-                <input type="checkbox" id="vainillaSabor1">
-                <label for="vainillaSabor2">Chocolate:</label>
-                <input type="checkbox" id="vainillaSabor2">
+            <label for="pastel1">Vainilla:</label>
+            <input type="checkbox" class="pastel1">
+            <p>Puedes combinar sabores:</p>
+            <label for="vainillaSabor1">Fresa:</label>
+            <input type="checkbox" id="vainillaSabor1">
+            <label for="vainillaSabor2">Chocolate:</label>
+            <input type="checkbox" id="vainillaSabor2">
 
-                <p>Adornos (puedes combinar adornos si gustas).</p>
-                <label for="vainillaFlores">Flores</label>
-                <input type="checkbox" id="vainillaFlores">
-                <label for="vainillaBoda">Boda</label>
-                <input type="checkbox" id="vainillaBoda">
-                <label for="vainillaCumpleaños">Cumpleaños</label>
-                <input type="checkbox" id="vainillaCumpleaños">
+            <p>Adornos (puedes combinar adornos si gustas).</p>
+            <label for="vainillaFlores">Flores</label>
+            <input type="checkbox" id="vainillaFlores">
+            <label for="vainillaBoda">Boda</label>
+            <input type="checkbox" id="vainillaBoda">
+            <label for="vainillaCumpleaños">Cumpleaños</label>
+            <input type="checkbox" id="vainillaCumpleaños">
 
-                <p>¿Cuantos pasteles quieres?</p>
-                <input type="number" id="numero">
-            </div>
+            <p>¿Cuantos pasteles quieres?</p>
+            <input type="number" id="numero">
             <hr>
             <!-- chocolate -->
-            <div id="chocolate">
-                <label for="pastel2">Chocolate:</label>
-                <input type="checkbox" class="pastel2">
-                <p>Puedes combinar sabores:</p>
-                <label for="chocolateSabor1">Vainilla:</label>
-                <input type="checkbox" id="chocolateSabor1">
-                <label for="chocolateSabor2">Fresa:</label>
-                <input type="checkbox" id="chocolateSabor2">
+            <label for="pastel2">Chocolate:</label>
+            <input type="checkbox" class="pastel2">
+            <p>Puedes combinar sabores:</p>
+            <label for="chocolateSabor1">Vainilla:</label>
+            <input type="checkbox" id="chocolateSabor1">
+            <label for="chocolateSabor2">Fresa:</label>
+            <input type="checkbox" id="chocolateSabor2">
 
-                <p>Adornos (puedes combinar adornos si gustas).</p>
-                <label for="chocolateFlores">Flores</label>
-                <input type="checkbox" id="chocolateFlores">
-                <label for="chocolateBoda">Boda</label>
-                <input type="checkbox" id="chocolateBoda">
-                <label for="chocolateCumpleaños">Cumpleaños</label>
-                <input type="checkbox" id="chocolateCumpleaños">
+            <p>Adornos (puedes combinar adornos si gustas).</p>
+            <label for="chocolateFlores">Flores</label>
+            <input type="checkbox" id="chocolateFlores">
+            <label for="chocolateBoda">Boda</label>
+            <input type="checkbox" id="chocolateBoda">
+            <label for="chocolateCumpleaños">Cumpleaños</label>
+            <input type="checkbox" id="chocolateCumpleaños">
 
-                <p>¿Cuantos pasteles quieres?</p>
-                <input type="number" id="numero">
-            </div>
+            <p>¿Cuantos pasteles quieres?</p>
+            <input type="number" id="numero">
             <hr>
             <!-- fresa -->
-            <div id="fresa">
-                <label for="pastel3">Fresa:</label>
-                <input type="checkbox" class="pastel3">
-                <p>Puedes combinar sabores:</p>
-                <label for="fresaSabor1">Vainilla:</label>
-                <input type="checkbox" id="fresaSabor1">
-                <label for="fresaSabor2">Chocolate:</label>
-                <input type="checkbox" id="fresaSabor2">
+            <label for="pastel3">Fresa:</label>
+            <input type="checkbox" class="pastel3">
+            <p>Puedes combinar sabores:</p>
+            <label for="fresaSabor1">Vainilla:</label>
+            <input type="checkbox" id="fresaSabor1">
+            <label for="fresaSabor2">Chocolate:</label>
+            <input type="checkbox" id="fresaSabor2">
 
-                <p>Adornos (puedes combinar adornos si gustas).</p>
-                <label for="fresaFlores">Flores</label>
-                <input type="checkbox" id="fresaFlores">
-                <label for="fresaBoda">Boda</label>
-                <input type="checkbox" id="fresaBoda">
-                <label for="fresaCumpleaños">Cumpleaños</label>
-                <input type="checkbox" id="fresaCumpleaños">
+            <p>Adornos (puedes combinar adornos si gustas).</p>
+            <label for="fresaFlores">Flores</label>
+            <input type="checkbox" id="fresaFlores">
+            <label for="fresaBoda">Boda</label>
+            <input type="checkbox" id="fresaBoda">
+            <label for="fresaCumpleaños">Cumpleaños</label>
+            <input type="checkbox" id="fresaCumpleaños">
 
-                <p>¿Cuantos pasteles quieres?</p>
-                <input type="number" id="numero">
-            </div>
+            <p>¿Cuantos pasteles quieres?</p>
+            <input type="number" id="numero">
             
         </form>
     </section>
